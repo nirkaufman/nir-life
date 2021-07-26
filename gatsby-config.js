@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Julia Doe`,
-    subtitle: `software developer`,
-    description: `A minimal blog starter built with Gatsbyjs. The needed Gatsby files are included.`,
-    author: `@niklasmtj`,
+    title: `Nir Kaufman`,
+    subtitle: `frontend developer`,
+    description: `Nir kaufman's personal webpage and blog.`,
+    author: `@nirkaufman`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -30,9 +30,9 @@ module.exports = {
         plugins: [`gatsby-remark-reading-time`, {
           resolve: `gatsby-remark-prismjs`,
           options: {
-            aliases:{sh: "bash", js:"javascript"},
+            aliases: { sh: "bash", js: "javascript" },
             showLineNumbers: true,
-          }
+          },
         }],
       },
     },
@@ -41,8 +41,8 @@ module.exports = {
       options: {
         headers: {
           "/*": [
-            "Strict-Transport-Security: max-age=63072000"
-          ]
+            "Strict-Transport-Security: max-age=63072000",
+          ],
         }, // option to add more headers. `Link` headers are transformed by the below criteria
         allPageHeaders: [], // option to add headers for all pages. `Link` headers are transformed by the below criteria
         mergeSecurityHeaders: true, // boolean to turn off the default security headers
@@ -50,6 +50,14 @@ module.exports = {
         mergeCachingHeaders: true, // boolean to turn off the default caching headers
         transformHeaders: (headers, path) => headers, // optional transform for manipulating headers under each path (e.g.sorting), etc.
         generateMatchPathRewrites: true, // boolean to turn off automatic creation of redirect rules for client only paths
+      },
+    },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /assets/,
+        },
       },
     },
     {

@@ -1,7 +1,7 @@
 import React from "react"
-import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
 import styled from "@emotion/styled"
+import { StaticQuery, graphql } from "gatsby"
+import SocialLinks from "./social-links"
 
 const Container = styled.div`
   text-align: center;
@@ -48,15 +48,5 @@ const LandingBio = () => (
     )}
   />
 )
-
-NameHeader.propTypes = {
-  siteTitle: PropTypes.string,
-  subtitle: PropTypes.string,
-}
-
-NameHeader.defaultProps = {
-  siteTitle: ``,
-  subtitle: ``,
-}
 
 export default LandingBio

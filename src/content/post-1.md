@@ -1,45 +1,21 @@
 ---
-title: "This is such a long headline and i dont know what to write so i keep continiung"
-date: "2019-03-17"
+title: "Session: Angular main.ts file"
+date: "2021-08-13"
 draft: false
-path: "/blog/example-title"
----
-# H1
-
-## H2
-
-### H3
-
-#### H4
-
-##### H5
-
-###### H6
-
-Paragraph
-
+path: "/blog/code-example"
 ---
 
-> This is a quote
+## About the session
+Yesterday, As part of my spontaneous video broadcasts which under the name: 'Angular & Whiskey', 
+I hacked The `main.ts` together with the community.  
+Keep exploring! 
 
----
+## Watch the video
+`youtube: https://www.youtube.com/watch?v=G9jIz2kZ75w`  
 
-[Example.com](example.com)
 
----
+## The `main.ts` snippet
 
-`const foo = bar`
-
-```javascript
-const foo = bar
-console.log(foo);
-```
-
----
-
-| Hello | World |
-|-------|------ |
-| Foo   | Bar   |
-
+`gist:nirkaufman/3ae3a8685b3527ff91fc3a996647da25`
 
 

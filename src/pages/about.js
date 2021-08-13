@@ -2,6 +2,7 @@ import React from "react"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
 import styled from "@emotion/styled"
+import { AnimatedLink } from "../components/shared"
 
 const Content = styled.div`
   text-align: center;
@@ -14,6 +15,7 @@ const Description = styled.p`
   padding: 0;
   margin-bottom: 1rem;
   font-size: 1.4rem;
+  line-height: 1.8rem;
 `
 const Email = styled.a`
   padding: 0;
@@ -41,9 +43,9 @@ const About = () => {
       <Content>
         <h1>Nir Kaufman</h1>
         <Description>
-          Frontend developer, <Marker>community enthusiast</Marker>, meetup organizer, international public speaker,
-          trainer, author, mentor, < br/><Marker>Google Developer Expert</Marker> in web technologies. <br/>
-          When I'm not coding I make electronic <Marker>music</Marker>, and <Marker>vegan</Marker> food.
+          Frontend developer,<AnimatedLink href={"https://www.meetup.com/fed-on-the-rocks/"} target={"_blank"}><Marker>community enthusiast</Marker>, meetup organizer</AnimatedLink>, international public speaker,
+          trainer, author, and mentor, < br/><AnimatedLink href={"https://developers.google.com/community/experts/directory/profile/profile-nir-kaufman"} target={"_blank"}><Marker>Google developer expert</Marker> in web technologies.</AnimatedLink> <br/>
+          When I'm not coding I produce electronic <Marker>music</Marker>, and <Marker>vegan</Marker> food.
         </Description>
       </Content>
     </Layout>

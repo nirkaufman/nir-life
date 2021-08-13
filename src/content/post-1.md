@@ -2,7 +2,7 @@
 title: "Session: Angular main.ts file"
 date: "2021-08-13"
 draft: false
-path: "/blog/code-example"
+path: "/blog/angular-bootstrap"
 ---
 
 ## About the session
